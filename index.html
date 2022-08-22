@@ -26,11 +26,11 @@
     </header>
 
     <main>
-        <section class="container my-5">
-            <div class="row g-3 text-center">
+        <section class="container mt-5">
+            <div class="row g-4 ">
 
                 <!-- card of players to select  -->
-                <div class="col-sm-6 col-md-8">
+                <div class="col-sm-6 col-md-8 text-center">
                     <div class="row row-cols-1 row-cols-md-3 g-4">
 
                         <!-- singel card area start  -->
@@ -117,9 +117,10 @@
                 </div>
 
 
-                <div class="col-6 col-md-4">
-                    <div>
-                        <h3>
+                <div class=" col-6 col-md-4">
+                    <!-- list area for player added  -->
+                    <div class="bg-black rounded">
+                        <h3 class=" py-1 text-center fw-bold text-warning rounded-2">
                             Selected FIVE
                         </h3>
                         <div>
@@ -130,22 +131,61 @@
                             </ol>
                         </div>
                     </div>
-                    <div>
-                        <h3>
-                            Selected FIVE
-                        </h3>
-                        <div>
-                            <ol class="list-group list-group-numbered">
-                                <li class="list-group-item">A list item</li>
-                                <li class="list-group-item">A list item</li>
-                                <li class="list-group-item">A list item</li>
-                            </ol>
+
+                    <!--=============== calculate player price ======================== -->
+                    <div class="my-5 bg-black text-white text-center py-3 rounded">
+                        <h4 class="">Budget</h4>
+
+                        <!-- per player form  -->
+                        <form>
+                            <div class="my-3 row text-center">
+                                <label for="" class="col-sm-4 col-form-label">Per Player</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control w-50" id="" placeholder="$$">
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="btn btn-danger w-75 px-5">Calculate</div>
+                        <div class="my-3 text-start ps-3 fw-bold">
+                            <p>Player Expence : $ <span>---</span></p>
+                        </div>
+                        <!-- maneger form  -->
+                        <form>
+                            <div class="my-3 row text-center">
+                                <label for="" class="col-sm-4 col-form-label">Manager</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control w-50" id="" placeholder="$$">
+                                </div>
+                            </div>
+                        </form>
+                        <!-- coach form  -->
+                        <form>
+                            <div class="row text-center">
+                                <label for="" class="col-sm-4 col-form-label">Coach</label>
+                                <div class="col-sm-8">
+                                    <input type="text" class="form-control w-50" id="" placeholder="$$">
+                                </div>
+                            </div>
+                        </form>
+
+                        <div class="btn btn-danger px-5 w-75 mt-2">Calculate</div>
+                        <div class="my-3 fw-bold d-flex justify-content-around ">
+                            <p>Total</p>
+                            <p class="text-warning">$<span>---</span></p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
     </main>
+    <footer>
+        <div class="bg-black h-100 text-center fw-semibold text-white mt-3 p-5">
+            <p class="m-5">
+                Copyright @ 2022 All Rights Reserved.
+            </p>
+        </div>
+    </footer>
 
 
 
