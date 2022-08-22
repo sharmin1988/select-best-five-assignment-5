@@ -18,21 +18,17 @@ function displayListArea(listArray) {
 }
 
 
-function addToList(element){
-    
-    // const button = document.getElementById('www')
-    // button.setAttribute('disabled', 'true')
-    // // for (const button of buttons) {
-    // //     // ✅ Set the disabled attribute
-    // //     button.setAttribute('disabled', '');}
+function addToList(element) {
+    element.disabled = true;
+    const playerName = element.parentNode.children[0].innerText;
 
-        const playerName = element.parentNode.children[0].innerText;
-        listArray.push(playerName);
-        if (listArray.length > 5) {
-            alert('maximum limit exceed');
-            return
-        }
-        else {
-            displayListArea(listArray)
-        }
+    listArray.push(playerName);
+    if (listArray.length > 5) {
+        alert('maximum limit exceed');
+        return
     }
+    else {
+        displayListArea(listArray)
+    }
+}
+
