@@ -153,26 +153,26 @@
                         <!-- maneger form  -->
                         <form>
                             <div class="my-3 row text-center">
-                                <label for="" class="col-sm-4 col-form-label">Manager</label>
+                                <label for="manager-expence" class="col-sm-4 col-form-label">Manager</label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control w-50" id="" placeholder="$$">
+                                    <input type="text" class="form-control w-50" id="manager-expence" placeholder="$$">
                                 </div>
                             </div>
                         </form>
                         <!-- coach form  -->
                         <form>
                             <div class="row text-center">
-                                <label for="" class="col-sm-4 col-form-label">Coach</label>
+                                <label for="coach-expence" class="col-sm-4 col-form-label">Coach</label>
                                 <div class="col-sm-8">
-                                    <input type="text" class="form-control w-50" id="" placeholder="$$">
+                                    <input type="text" class="form-control w-50" id="coach-expence" placeholder="$$">
                                 </div>
                             </div>
                         </form>
 
-                        <div class="btn btn-danger px-5 w-75 mt-2">Calculate</div>
+                        <div id="btn-total" class="btn btn-danger px-5 w-75 mt-2">Calculate</div>
                         <div class="my-3 fw-bold d-flex justify-content-around ">
                             <p>Total</p>
-                            <p class="text-warning">$<span>---</span></p>
+                            <p class="text-warning">$<span id="total-expence">---</span></p>
                         </div>
                     </div>
                 </div>
@@ -196,6 +196,7 @@
     </script>
 
     <!-- my js link  -->
+    <script src="js/utilities.js"></script>
     <script src="js/per-player-budget.js"></script>
 
 </body>
