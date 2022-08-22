@@ -19,15 +19,14 @@ function displayListArea(listArray) {
 
 
 function addToList(element) {
-    element.disabled = true;
-    const playerName = element.parentNode.children[0].innerText;
-
-    listArray.push(playerName);
-    if (listArray.length > 5) {
+    if (listArray.length > 4) {
         alert('maximum limit exceed');
         return
     }
     else {
+        element.disabled = true;
+        const playerName = element.parentNode.children[0].innerText;
+        listArray.push(playerName);
         displayListArea(listArray)
     }
 }
