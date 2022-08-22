@@ -2,7 +2,7 @@
 
 document.getElementById('btn-pre-player').addEventListener('click', function(){
     const perPlayerBudget = getInputFieldValueById('per-player-input-field');
-    const totalPlayerExpence = perPlayerBudget * 5;
+    const totalPlayerExpence = perPlayerBudget * listArray.length;
     setTextElementValueById('player-expence', totalPlayerExpence)
 })
 
