@@ -1,4 +1,5 @@
 
+//==================== budget section calculation ===========
 
 document.getElementById('btn-pre-player').addEventListener('click', function(){
     const perPlayerBudget = getInputFieldValueById('per-player-input-field');

@@ -1,9 +1,12 @@
+
+//====================== selected five list section ==========================
+
 const listArray = [];
 
 function displayListArea(listArray) {
     const listBody = document.getElementById('display-list');
     listBody.textContent = '';
-
+    //------------------ dynamic player list creat-------------------
     for (let i = 0; i < listArray.length; i++) {
         const playerName = listArray[i];
         const li = document.createElement('li');
@@ -15,14 +18,21 @@ function displayListArea(listArray) {
 }
 
 
-function addToList(element) {
-    const playerName = element.parentNode.children[0].innerText;
-    listArray.push(playerName);
-    if (listArray.length > 5) {
-        alert('maximum limit exceed');
-        return
+function addToList(element){
+    
+    // const button = document.getElementById('www')
+    // button.setAttribute('disabled', 'true')
+    // // for (const button of buttons) {
+    // //     // ✅ Set the disabled attribute
+    // //     button.setAttribute('disabled', '');}
+
+        const playerName = element.parentNode.children[0].innerText;
+        listArray.push(playerName);
+        if (listArray.length > 5) {
+            alert('maximum limit exceed');
+            return
+        }
+        else {
+            displayListArea(listArray)
+        }
     }
-    else {
-        displayListArea(listArray)
-    }
-}
